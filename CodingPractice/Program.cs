@@ -8,7 +8,14 @@ namespace CodingPractice
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Create an object to split a string and store its value. 
+            StringSplitter stringSplitter = new StringSplitter();
+            string testString = "The quick brown fox jumped over the lazy dog.";
+            stringSplitter.getWords(testString);
+
+            //Display all of the seperate words in the Split array.
+            stringSplitter.displaySplitToConsole();
         }
     }
+    
 }
